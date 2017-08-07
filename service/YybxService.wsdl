@@ -1,0 +1,644 @@
+﻿<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetPzfl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="swhere" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPzflResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPzflResult" type="tns:ArrayOfModel_yy_pzfl" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfModel_yy_pzfl">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="model_yy_pzfl" nillable="true" type="tns:model_yy_pzfl" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="model_yy_pzfl">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="YYDH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="YWBH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GTBH" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BH" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FJZS" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="KMBH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JJFLKMBH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Gnkmbh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BMBH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="XMBH" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="JJE" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="DJE" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="wbbh" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="hl" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="jsdh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ywrq" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="jwb" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="dwb" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="dch" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="zrr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="zclb" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="zcbh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="gkyslxdm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="gklkxdm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="gkzclxdm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="gkfzdm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="xjyhcn" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="sl" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="dj" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="gkjjfldm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="xjllxm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="gkxxm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="isgk" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="jbr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EDKZBM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DWBH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HTBH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PJH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SRBH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="gkyssxdm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="YSKMBH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ISZFK" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ISZCK" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ISXJ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ISYH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ktxx" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="iszdzx" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bknd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="isjjfl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZFFS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DFDW" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DFCITY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DFYH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DFPRO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DFZH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ISPZ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CZRQ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CZY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KJND" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KJQJ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PZLX" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PZBH" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MySoapHeader" type="tns:MySoapHeader" />
+      <s:complexType name="MySoapHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Uname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="SetPzflZt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="yydh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="kjnd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="kjqj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pzlx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pzbh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sm" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPzflZtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetPzflZtResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ErasePzflZt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="kjnd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="kjqj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pzlx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pzbh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zt" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ErasePzflZtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ErasePzflZtResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGwkxfjl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="yydh" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGwkxfjlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGwkxfjlResult" type="tns:ArrayOfModule_yy_gwkxfjlb" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfModule_yy_gwkxfjlb">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="module_yy_gwkxfjlb" nillable="true" type="tns:module_yy_gwkxfjlb" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="module_yy_gwkxfjlb">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="YYDH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="YWBH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BMBH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="XMBH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KMBH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="COLLECT_DATE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CARD_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BRANCH_NUM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TXN_DT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TXN_TIME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PTG_DT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TXN_DES" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MER_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AMT_POS_TML_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MER_NAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TXN_SEQ_NUM" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TXN_AMT" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="TXN_CURR_CD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TXN_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ATH_CD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SLT_ORG_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PTG_ORG_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SEARCH_REF_NUM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SLT_DT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JDBZ" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="WBJE" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="BZDM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CKRXM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="YHBZ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BZ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CF1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CF2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CF3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CF4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CF5" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CF6" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GKYSLXDM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GKLKXDM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GKJJFLDM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GKZCLXDM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GKFZDM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GKYSSXDM" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetXmzzxxZt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ywbh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zdr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zwpznm" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetXmzzxxZtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetXmzzxxZtResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArrayOfModel_yy_pzfl" nillable="true" type="tns:ArrayOfModel_yy_pzfl" />
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="ArrayOfModule_yy_gwkxfjlb" nillable="true" type="tns:ArrayOfModule_yy_gwkxfjlb" />
+      <s:element name="boolean" type="s:boolean" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetPzflSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPzfl" />
+  </wsdl:message>
+  <wsdl:message name="GetPzflSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPzflResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPzflMySoapHeader">
+    <wsdl:part name="MySoapHeader" element="tns:MySoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="SetPzflZtSoapIn">
+    <wsdl:part name="parameters" element="tns:SetPzflZt" />
+  </wsdl:message>
+  <wsdl:message name="SetPzflZtSoapOut">
+    <wsdl:part name="parameters" element="tns:SetPzflZtResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetPzflZtMySoapHeader">
+    <wsdl:part name="MySoapHeader" element="tns:MySoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="ErasePzflZtSoapIn">
+    <wsdl:part name="parameters" element="tns:ErasePzflZt" />
+  </wsdl:message>
+  <wsdl:message name="ErasePzflZtSoapOut">
+    <wsdl:part name="parameters" element="tns:ErasePzflZtResponse" />
+  </wsdl:message>
+  <wsdl:message name="ErasePzflZtMySoapHeader">
+    <wsdl:part name="MySoapHeader" element="tns:MySoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetGwkxfjlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGwkxfjl" />
+  </wsdl:message>
+  <wsdl:message name="GetGwkxfjlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGwkxfjlResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGwkxfjlMySoapHeader">
+    <wsdl:part name="MySoapHeader" element="tns:MySoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="SetXmzzxxZtSoapIn">
+    <wsdl:part name="parameters" element="tns:SetXmzzxxZt" />
+  </wsdl:message>
+  <wsdl:message name="SetXmzzxxZtSoapOut">
+    <wsdl:part name="parameters" element="tns:SetXmzzxxZtResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetXmzzxxZtMySoapHeader">
+    <wsdl:part name="MySoapHeader" element="tns:MySoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetPzflHttpGetIn">
+    <wsdl:part name="swhere" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPzflHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfModel_yy_pzfl" />
+  </wsdl:message>
+  <wsdl:message name="SetPzflZtHttpGetIn">
+    <wsdl:part name="yydh" type="s:string" />
+    <wsdl:part name="zt" type="s:string" />
+    <wsdl:part name="kjnd" type="s:string" />
+    <wsdl:part name="kjqj" type="s:string" />
+    <wsdl:part name="pzlx" type="s:string" />
+    <wsdl:part name="pzbh" type="s:string" />
+    <wsdl:part name="sm" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPzflZtHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ErasePzflZtHttpGetIn">
+    <wsdl:part name="kjnd" type="s:string" />
+    <wsdl:part name="kjqj" type="s:string" />
+    <wsdl:part name="pzlx" type="s:string" />
+    <wsdl:part name="pzbh" type="s:string" />
+    <wsdl:part name="zt" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ErasePzflZtHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGwkxfjlHttpGetIn">
+    <wsdl:part name="yydh" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGwkxfjlHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfModule_yy_gwkxfjlb" />
+  </wsdl:message>
+  <wsdl:message name="SetXmzzxxZtHttpGetIn">
+    <wsdl:part name="ywbh" type="s:string" />
+    <wsdl:part name="zt" type="s:string" />
+    <wsdl:part name="zdr" type="s:string" />
+    <wsdl:part name="zwpznm" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetXmzzxxZtHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetPzflHttpPostIn">
+    <wsdl:part name="swhere" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPzflHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfModel_yy_pzfl" />
+  </wsdl:message>
+  <wsdl:message name="SetPzflZtHttpPostIn">
+    <wsdl:part name="yydh" type="s:string" />
+    <wsdl:part name="zt" type="s:string" />
+    <wsdl:part name="kjnd" type="s:string" />
+    <wsdl:part name="kjqj" type="s:string" />
+    <wsdl:part name="pzlx" type="s:string" />
+    <wsdl:part name="pzbh" type="s:string" />
+    <wsdl:part name="sm" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPzflZtHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ErasePzflZtHttpPostIn">
+    <wsdl:part name="kjnd" type="s:string" />
+    <wsdl:part name="kjqj" type="s:string" />
+    <wsdl:part name="pzlx" type="s:string" />
+    <wsdl:part name="pzbh" type="s:string" />
+    <wsdl:part name="zt" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ErasePzflZtHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGwkxfjlHttpPostIn">
+    <wsdl:part name="yydh" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGwkxfjlHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfModule_yy_gwkxfjlb" />
+  </wsdl:message>
+  <wsdl:message name="SetXmzzxxZtHttpPostIn">
+    <wsdl:part name="ywbh" type="s:string" />
+    <wsdl:part name="zt" type="s:string" />
+    <wsdl:part name="zdr" type="s:string" />
+    <wsdl:part name="zwpznm" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetXmzzxxZtHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:portType name="YybxServiceSoap">
+    <wsdl:operation name="GetPzfl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据预约凭证分录获取</wsdl:documentation>
+      <wsdl:input message="tns:GetPzflSoapIn" />
+      <wsdl:output message="tns:GetPzflSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPzflZt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新预约凭证分录状态</wsdl:documentation>
+      <wsdl:input message="tns:SetPzflZtSoapIn" />
+      <wsdl:output message="tns:SetPzflZtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ErasePzflZt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">抹去预约凭证分录状态</wsdl:documentation>
+      <wsdl:input message="tns:ErasePzflZtSoapIn" />
+      <wsdl:output message="tns:ErasePzflZtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGwkxfjl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取公务卡报销消费记录信息</wsdl:documentation>
+      <wsdl:input message="tns:GetGwkxfjlSoapIn" />
+      <wsdl:output message="tns:GetGwkxfjlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetXmzzxxZt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新预约项目转账状态信息</wsdl:documentation>
+      <wsdl:input message="tns:SetXmzzxxZtSoapIn" />
+      <wsdl:output message="tns:SetXmzzxxZtSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="YybxServiceHttpGet">
+    <wsdl:operation name="GetPzfl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据预约凭证分录获取</wsdl:documentation>
+      <wsdl:input message="tns:GetPzflHttpGetIn" />
+      <wsdl:output message="tns:GetPzflHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPzflZt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新预约凭证分录状态</wsdl:documentation>
+      <wsdl:input message="tns:SetPzflZtHttpGetIn" />
+      <wsdl:output message="tns:SetPzflZtHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ErasePzflZt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">抹去预约凭证分录状态</wsdl:documentation>
+      <wsdl:input message="tns:ErasePzflZtHttpGetIn" />
+      <wsdl:output message="tns:ErasePzflZtHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGwkxfjl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取公务卡报销消费记录信息</wsdl:documentation>
+      <wsdl:input message="tns:GetGwkxfjlHttpGetIn" />
+      <wsdl:output message="tns:GetGwkxfjlHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetXmzzxxZt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新预约项目转账状态信息</wsdl:documentation>
+      <wsdl:input message="tns:SetXmzzxxZtHttpGetIn" />
+      <wsdl:output message="tns:SetXmzzxxZtHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="YybxServiceHttpPost">
+    <wsdl:operation name="GetPzfl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据预约凭证分录获取</wsdl:documentation>
+      <wsdl:input message="tns:GetPzflHttpPostIn" />
+      <wsdl:output message="tns:GetPzflHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPzflZt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新预约凭证分录状态</wsdl:documentation>
+      <wsdl:input message="tns:SetPzflZtHttpPostIn" />
+      <wsdl:output message="tns:SetPzflZtHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ErasePzflZt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">抹去预约凭证分录状态</wsdl:documentation>
+      <wsdl:input message="tns:ErasePzflZtHttpPostIn" />
+      <wsdl:output message="tns:ErasePzflZtHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGwkxfjl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取公务卡报销消费记录信息</wsdl:documentation>
+      <wsdl:input message="tns:GetGwkxfjlHttpPostIn" />
+      <wsdl:output message="tns:GetGwkxfjlHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetXmzzxxZt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新预约项目转账状态信息</wsdl:documentation>
+      <wsdl:input message="tns:SetXmzzxxZtHttpPostIn" />
+      <wsdl:output message="tns:SetXmzzxxZtHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="YybxServiceSoap" type="tns:YybxServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPzfl">
+      <soap:operation soapAction="http://tempuri.org/GetPzfl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPzflMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPzflZt">
+      <soap:operation soapAction="http://tempuri.org/SetPzflZt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SetPzflZtMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ErasePzflZt">
+      <soap:operation soapAction="http://tempuri.org/ErasePzflZt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ErasePzflZtMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGwkxfjl">
+      <soap:operation soapAction="http://tempuri.org/GetGwkxfjl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetGwkxfjlMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetXmzzxxZt">
+      <soap:operation soapAction="http://tempuri.org/SetXmzzxxZt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SetXmzzxxZtMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="YybxServiceSoap12" type="tns:YybxServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPzfl">
+      <soap12:operation soapAction="http://tempuri.org/GetPzfl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPzflMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPzflZt">
+      <soap12:operation soapAction="http://tempuri.org/SetPzflZt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SetPzflZtMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ErasePzflZt">
+      <soap12:operation soapAction="http://tempuri.org/ErasePzflZt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ErasePzflZtMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGwkxfjl">
+      <soap12:operation soapAction="http://tempuri.org/GetGwkxfjl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetGwkxfjlMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetXmzzxxZt">
+      <soap12:operation soapAction="http://tempuri.org/SetXmzzxxZt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SetXmzzxxZtMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="YybxServiceHttpGet" type="tns:YybxServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetPzfl">
+      <http:operation location="/GetPzfl" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPzflZt">
+      <http:operation location="/SetPzflZt" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ErasePzflZt">
+      <http:operation location="/ErasePzflZt" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGwkxfjl">
+      <http:operation location="/GetGwkxfjl" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetXmzzxxZt">
+      <http:operation location="/SetXmzzxxZt" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="YybxServiceHttpPost" type="tns:YybxServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetPzfl">
+      <http:operation location="/GetPzfl" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPzflZt">
+      <http:operation location="/SetPzflZt" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ErasePzflZt">
+      <http:operation location="/ErasePzflZt" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGwkxfjl">
+      <http:operation location="/GetGwkxfjl" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetXmzzxxZt">
+      <http:operation location="/SetXmzzxxZt" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="YybxService">
+    <wsdl:port name="YybxServiceSoap" binding="tns:YybxServiceSoap">
+      <soap:address location="/szhtkjws/YybxService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

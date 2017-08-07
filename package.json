@@ -1,0 +1,20 @@
+{
+  "name": "yybxservice",
+  "version": "0.0.1",
+  "description": "yybx Service",
+  "main": "soapserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xlx",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "iconv": "^2.3.0",
+    "msnodesqlv8": "^0.2.16",
+    "request-promise": "^4.2.1",
+    "soap": "^0.19.2",
+    "strong-soap": "^1.2.5",
+    "ursa": "^0.9.4"
+  }
+}
